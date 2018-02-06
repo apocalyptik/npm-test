@@ -1,7 +1,6 @@
 import test from 'ava';
 import linearRegression from './';
 
-
 test('unicorns are truthy', t => {
 
     const points = [
@@ -13,10 +12,8 @@ test('unicorns are truthy', t => {
         [59, 81]
     ];
 
-    var line = linearRegression(points);
+    const line = linearRegression(points);
 
-    t.is(line, {
-        a: 65.1415715245131,
-        b: 0.38522498321020804
-    });
+    t.is(line.a, 65.1415715245131);
+    t.is(line.b, 0.38522498321020804);
 });
