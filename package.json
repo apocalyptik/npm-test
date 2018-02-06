@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/apocalyptik/npm-test/issues"
   },
-  "homepage": "https://github.com/apocalyptik/npm-test#readme"
+  "homepage": "https://github.com/apocalyptik/npm-test#readme",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
 }
