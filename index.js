@@ -13,11 +13,11 @@ function linearRegression(points) {
         Y.push(point[1]);
     });
 
-    const b = covariance(X, Y) / variance.calc(X);
+    const a = covariance(X, Y) / variance.calc(X);
     
     return {
-        a: mean.calc(Y) - b * mean.calc(X),
-        b
+        b: mean.calc(Y) - a * mean.calc(X),
+        a
     };
 }
 
